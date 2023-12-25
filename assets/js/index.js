@@ -37,18 +37,18 @@ console.log(pastDate);
 console.log(currentDate.getDate()-pastDate.getDate());
 //Задание 10
 // Создайте переменную nextWeek и присвойте ей дату следующей недели. Значение выведите в консоль.
-
+//const nextWeek = newDate(currentDate.getTime() + 7 * 24 * 60 * 60 * 1000);
 //Задание 11
 // Выведите в консоль день недели для nextWeek
-
+//console.log(nextWeek.getDay());
 //Задание 12
 // Создайте переменную futureYear и присвойте ей значение текущего года плюс 5. Значение выведите в консоль.
 const futureYear = currentDate.getFullYear() + 5;
 console.log(futureYear);
 //Задание 13
 // Создайте переменную futureDateInFutureYear и присвойте ей дату вашего дня рождения в будущем году (futureYear). Значение выведите в консоль.
-const futureDateInFutureYear = birthday + 365;
-console.log(futureDateInFutureYear);
+//const futureDateInFutureYear = newDate(futureYear, 6, 5);
+//console.log(futureDateInFutureYear);
 //Задание 14
 // Выведите в консоль разницу в годах между futureYear и текущим годом
 
@@ -100,7 +100,7 @@ if (number % 2 ===0) {
 }
 //Задание 20
 // Используя цикл if...else, проверьте является ли переменная number кратным 3. Результат выведите в консоль.
-if (number / 3) {
+if (number % 3 ===0) {
     console.log(number/3);
 } else {
     console.log("Переменная не делится на 3");
@@ -128,7 +128,7 @@ if (number >=0) {
 }
 //Задание 24
 // Используя цикл if...else, проверьте является ли переменная number кратным 5 или 7. Результат выведите в консоль.
-if (number/'5' && number/'7') {
+if (number / 5 && number /7) {
     console.log(number / 5, number / 7);
 } else {
     console.log("Переменная не делится на 5 и 7");
@@ -175,9 +175,8 @@ switch(new Date().getDay()) {
     break;
   default:
     day = 'Неизвестный день';
+    console.log('Сегодня ' + day + '.');  
 }
-
-console.log('Сегодня ' + day + '.');  
 //Задание 28
 // Используя цикл switch case, напишите программу, которая принимает на вход символ направления (N, S, E, W) и выводит в консоль полное название этого направления (N - "Север", S - "Юг", E - "Восток", W - "Запад").
 let direction = 'W';
